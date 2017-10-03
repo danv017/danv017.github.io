@@ -2,15 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>HOME</title>
+     <link href="css.css" rel="stylesheet" type="text/css"> 
   </head>
   <body>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="aboutme.html">About me</a>
+    
+
+    <div style="background-color:black;color:white;padding:20px;">
+    <a href="index.html">HOME</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    </div>
+    <br>
+    <br>
     <center>
-    <h1>Home</h1>
+    <h1>HOME</h1>
+     <img src="images/carbon-black-background-3.jpg" height="50" width="1690" class="center">
     </center>
-    <img src="images/home.jpg" height="250">
-  </body>
-</html>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/0e9ecd020800465fbf5d7623eb17b2d5.jpg" style="width:100%">
+  <div class="text">CPU</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/File.png" style="width:100%">
+  <div class="text">PROGRAMMING LANGUAGES</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/1449677437-dwave1.jpg" style="width:100%">
+  <div class="text">QUANTUM COMPUTERS</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+    
