@@ -6,17 +6,45 @@
   </head>
    <link href="css.css" rel="stylesheet" type="text/css"> 
   <body>
-    <div style="background-color:black;color:white;padding:20px;">
+    <div class="navbar">
     <a href="index.html">HOME</a>
     <a href="portfolio.html">PORTFOLIO</a>
     <a href="aboutme.html">ABOUT ME</a>
+     <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+       </div>
+  </div> 
+</div>
     </div>
+     <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
     <br>
     <br>
     <center>
     <h1>ABOUT ME</h1>
     <div style="background-color:black;color:white;padding:20px;">
-  <p>My name is Danny Vuong and I'm a student of Hillcrest High School. Fortunatel for me I'm a senior who happens to have AP computer science to program till my heart's content.</p>
+  <p>My name is Danny vuong and I'm a student of Hillcrest High School. Fortunately for me I'm a senior who happens to have AP computer science to program till my heart's content.</p>
 </div> 
 <br>
 <br>
