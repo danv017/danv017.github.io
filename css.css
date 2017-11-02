@@ -1,7 +1,26 @@
 
 
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('images/thumb-1920-359057.jpg');
+    
 
 
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*For home page*/
 body, html {
     height: 100%;
     margin: 0;
@@ -170,7 +189,8 @@ padding: 11px;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 700px;
+  max-height:400px;
   position: relative;
   margin: auto;
 }
